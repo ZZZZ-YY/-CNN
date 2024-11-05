@@ -1,8 +1,8 @@
-# -CNN
+##### -CNN
 AN INTRODUCTION of Convolutional Nertural Network
-import numpy as np
 
-# 假设这是一个 5x5 的灰度图像矩阵
+
+import numpy as np
 image = np.array([
     [10, 20, 30, 40, 50],
     [60, 70, 80, 90, 100],
@@ -11,14 +11,13 @@ image = np.array([
     [210, 220, 230, 240, 250]
 ])
 
-# 定义一个 3x3 的滤波器，例如边缘检测
 filter_kernel = np.array([
     [1, 0, -1],
     [1, 0, -1],
     [1, 0, -1]
 ])
 
-# 卷积函数
+
 def convolution2d(image, filter_kernel):
     # 获取图像和滤波器的尺寸
     image_height, image_width = image.shape
